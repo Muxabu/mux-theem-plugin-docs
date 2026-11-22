@@ -33,5 +33,6 @@
 1. **Site administrator.** Use Tamara Setup to create starter pages, accommodation products, and venue records as needed. Review the page assignments and placeholder text before launch.
 2. **Store staff.** Edit the product price, gallery, booking type, identical-unit capacity, and Stay Details. Updates to accommodation details feed the product display, while changes to rates and capacity affect future cart and availability checks.
 3. **Site or venue editor.** Use the WordPress Customizer and venue editor for the settings they have permission to change. Preview homepage copy and images, and review the public dining page after publishing a venue update.
+4. **Site administrator previewing the homepage.** Save a new hero heading or select an uploaded image in the Customizer. For example, preview the family beach concept at mobile and desktop widths. An empty image setting displays the bundled default hero. Blank text fields use the theme's default copy.
 
 [Back to project overview](README.md)

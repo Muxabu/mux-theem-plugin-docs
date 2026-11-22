@@ -1,8 +1,20 @@
 # Testing
 
+## Comparing the theme packages
+
+Ran each archived theme's bundled source tests with Node.js 24.19.0. PHP 8.5.11 syntax checks passed on all 24 PHP files in each package. Archive integrity checks also passed for every file entry.
+
+| Package | Source tests | Verified file entries |
+| --- | --- | --- |
+| 2.2.5 original | 4 passed. Checked accommodation details and WooCommerce price display wiring. | 69 |
+| 2.2.6 | 6 passed. Added checks for homepage Customizer fields, shared defaults, and safe rendering. | 70 |
+| 2.2.7 | 10 passed. Added checks for mobile checkout widths, RTL stacking, and contact form scoping. | 71 |
+
+The 2.2.6 and 2.2.7 styles were also compared in a completed headless Chrome 157 fixture. It used simulated RTL WooCommerce checkout markup and Paymob layout rules. On 2.2.6 the main checkout column measured 0 px at viewports of 375 and 900 px. On 2.2.7 both columns stacked and each measured the full available width, 343 px and 852 px respectively. At 901 px both versions used a side-by-side layout. The mock classic checkout row changed from a grid to a block in 2.2.7, and the mock contact form row used a grid in both versions.
+
 ## Bundled tests
 
-The theme and plugin suites were run for the documented revision with Node.js 24.19.0. All 44 tests passed, with zero failures and zero skips.
+The 2.2.7 theme and 1.2.0 plugin suites were run for the documented revision with Node.js 24.19.0. All 44 tests passed, with zero failures and zero skips.
 
 | Check | Coverage and observed result |
 | --- | --- |
@@ -44,7 +56,6 @@ Ran a signed-out storefront smoke check in headless Chrome 157 on that same site
 | Booking rules | Ran eight PHP cases against the booking, capacity, and availability classes with WordPress and WooCommerce stubs and an in-memory inventory simulator. Date and price checks passed. The fixture allocated two units and rejected a third, released and reused a slot, preserved and refreshed hold expiry as expected, rolled back a simulated partial write, and converted an order hold to a booked row after a simulated paid state. |
 | Contact and dining fallback | Ran seven PHP cases with WordPress and mail stubs. The handler returned the expected feedback for a valid submission, an invalid recipient setting, a simulated mail failure, a missing nonce, a missing message, and a filled honeypot. The venue fallback built PDF paths and prefilled WhatsApp links for both venues. |
 | Theme interactions | Ran the theme scripts in headless Chrome 157 with a small RTL HTML fixture and simulated WooCommerce variation events. Date guidance corrected an invalid departure, the fixture disclosures closed the previous item when a second opened, and the displayed price and discount updated and reset with variation events. |
-| Responsive checkout | Verified a completed headless Chrome 157 result against the same theme stylesheet revision. In the RTL fixture, simulated WooCommerce markup and gateway layout rules exercised checkout at 375, 900, and 901 px. The form and summary stacked and fit at 375 and 900 px without horizontal overflow. At 901 px they stayed side by side. The classic checkout row was outside the scoped contact grid. |
 
 ## Packages and images
 

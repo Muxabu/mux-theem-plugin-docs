@@ -34,6 +34,7 @@ The theme and companion plugin are both listed as **MUX Booking** in WordPress. 
 2. Open checkout in an RTL phone viewport at 900 px or narrower. With the Checkout block, look for full-width form and summary sections stacked vertically. Submit through the configured sandbox gateway and inspect the order's booking dates and status in **WooCommerce → Orders**. To exercise an availability rejection, use separate shopping sessions and try the same range on a one-unit product while its first cart hold is active.
 3. Publish an activity or boat product with a staging price and WooCommerce stock. Choose a future date and quantity, then review the activity date and total in the cart.
 4. Edit a venue and verify its listing, detail page, configured menu link, and WhatsApp preview. Send a synthetic Contact form inquiry through the staging site's mail setup and check the displayed response and delivery to the configured recipient.
-5. To review the content controls, change a homepage image or line of copy in **Appearance → Customize**, preview the storefront, and save on staging when the result is ready.
+5. To review the 2.2.6 homepage editing, change a headline in **Appearance → Customize → Homepage Content** and preview the storefront. To preview one of the optional hero concepts, upload the JPEG from the theme source to the **Media Library**, then pick it in **Appearance → Customize → Homepage Images and Banners → Main Hero Image**. Check the preview at mobile and desktop widths before saving on staging.
+6. To check the 2.2.7 classic checkout styling, open a staging checkout page using the classic format and verify that the billing rows follow the WooCommerce layout.
 
 [Back to project overview](README.md)

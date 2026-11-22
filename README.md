@@ -28,6 +28,16 @@ flowchart TD
 
 The **Tamara Beach theme** provides the shopping and resort pages. The **MUX Booking plugin** adds dated products, stay inventory, booking status, and dining content. **WordPress** hosts both, and **WooCommerce** handles products, the cart, orders, and payment integration.
 
+## Theme releases at a glance
+
+| Theme version | What it contains |
+| --- | --- |
+| **2.2.5** | Original packaged baseline. The homepage displays built-in copy. |
+| **2.2.6** | Connects homepage copy to 11 WordPress Customizer fields. |
+| **2.2.7** | Keeps the homepage editing and fixes mobile WooCommerce checkout layout. |
+
+[Compare the theme versions](FEATURES.md#theme-version-history) to see what changed in each area. The companion MUX Booking plugin has its own version, **1.2.0**.
+
 ## Documentation
 
 - [Project flow](PROJECT_FLOW.md) follows bookings, dining, and inquiries from first action to outcome.
